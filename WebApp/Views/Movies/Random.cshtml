@@ -1,0 +1,23 @@
+﻿@model WebApp.ViewModels.RandomMovieViewMode
+@{
+    ViewBag.Title = "Random";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Random</h2>
+
+<ul>
+    @foreach (var customer in Model.Customers)
+    {
+
+        <li>@Html.ActionLink(customer.Name, "CustomerNotFound", "Movies")</li>
+
+    }
+
+
+
+</ul>
+
+
+
+
